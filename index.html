@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lviv</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="modal.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="city-page">
+    <div class="wrapper">
+      <img src="img/logo.png" , alt="GOIT logo" class="goit-logo">
+
+
+      <div class="city-text-container">
+        <h1 class="city_title">Львів</h1>
+
+        <p class="city_description">Місто Лева. Засноване 1256 року, налічує близько 717 тисяч українців та є одним із
+          найбільших туристичних місць
+          України. Щороку у Львові проходить близько 100 культурних, музичних, релігійних, гастрономічних фестивалів.
+          Кожен
+          п’ятий у Львові – студент, у місті 26 університетів. Львів внесено до переліку світової спадщини ЮНЕСКО. У
+          Львові
+          з’явився перший у світі Музей сала. Львівські ІТвці розробили застосунок Skype для мобільного телефону.
+
+          Львів =
+          культурна столиця України
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="city-gallery">
+    <h2 class="city-gallery-title">Львів = культурна столиця України</h2>
+
+    <div class="wrapper">
+      <div class="gallery">
+        <button data-micromodal-trigger="modal" class="gallery-button" data-index="0">
+          <img class="gallery-image" src="img/1.jpg" alt="">
+        </button>
+        <button data-micromodal-trigger="modal" class="gallery-button" data-index="1">
+          <img class="gallery-image" src="img/2.jpg" alt="">
+        </button>
+        <button data-micromodal-trigger="modal" class="gallery-button" data-index="2">
+          <img class="gallery-image" src="img/3.jpg" alt="">
+        </button>
+        <button data-micromodal-trigger="modal" class="gallery-button" data-index="3">
+          <img class="gallery-image" src="img/4.jpg" alt="">
+        </button>
+        <button data-micromodal-trigger="modal" class="gallery-button" data-index="4">
+          <img class="gallery-image" src="img/5.jpg" alt="">
+        </button>
+        <button data-micromodal-trigger="modal" class="gallery-button" data-index="5">
+          <img class="gallery-image" src="img/6.jpg" alt="">
+        </button>
+        <button data-micromodal-trigger="modal" class="gallery-button" data-index="6">
+          <img class="gallery-image" src="img/7.jpg" alt="">
+        </button>
+        <button data-micromodal-trigger="modal" class="gallery-button" data-index="7">
+          <img class="gallery-image" src="img/8.jpg" alt="">
+        </button>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-title">
+            Cвітлини міста Львова
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content" id="modal-content">
+          <div class="splide" role="group" aria-label="city-gallery">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="img/1.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/2.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/3.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/4.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/5.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/6.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/7.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/8.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="gallery.js"></script>
+</body>
+
+</html>
